@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🐍 貪食蛇遊戲</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <div class="left-panel">
+      <h1>🐍 貪食蛇遊戲</h1>
+    </div>
+
+    <div class="center-panel">
+      <div id="game-board"></div>
+    </div>
+
+    <div class="right-panel">
+      <div id="score">得分：0</div>
+      <button id="start-button" style="display:none;">開始遊戲</button>
+      <div id="game-over" class="hidden">遊戲結束！<br>請重新開始</div>
+    </div>
+  </div>
+
+  <!-- 暱稱輸入面板 -->
+  <div id="nickname-panel">
+    <label for="nickname">請輸入暱稱：</label>
+    <input type="text" id="nickname" placeholder="你的暱稱" />
+    <button id="confirm-nickname">確認</button>
+  </div>
+
+  <!-- 排行榜 -->
+  <div id="leaderboard">
+    <h3>排行榜</h3>
+    <ul id="leaderboard-list"></ul>
+  </div>
+
+  <!-- Firebase SDK -->
+  <script type="module" src="script.js"></script>
+</body>
+</html>
